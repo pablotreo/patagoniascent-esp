@@ -1,32 +1,32 @@
 ---
 const links = [
   {
-    name: 'about us',
-    href: '/#aboutus',
+    name: 'nosotros',
+    href: '/#nosotros',
   },
   {
-    name: 'mountaineering',
-    href: '/#mountaineering',
+    name: 'montaña',
+    href: '/#montana',
   },
   {
-    name: 'climbing',
-    href: '/#climbing',
+    name: 'escalada',
+    href: '/#escalada',
   },
   {
-    name: 'skiing',
-    href: '/#skiing',
+    name: 'esquí',
+    href: '/#esqui',
   },
   {
-    name: 'creston experience',
-    href: '/#creston-experience',
+    name: 'experiencia creston',
+    href: '/#experiencia-creston',
   },
   {
-    name: 'courses',
-    href: '/#courses',
+    name: 'cursos',
+    href: '/#cursos',
   },
   {
-    name: 'contact us',
-    href: '/contactus',
+    name: 'contacto',
+    href: '/contacto',
   },
 ]
 const redes = [
@@ -76,14 +76,14 @@ const logos = [
       <a href="/" class="d-flex align-items-center mb-1 link-body-emphasis text-decoration-none">
         <h5 class="fw-light text-body-secondary"><span class="fw-medium">PATAGONIA</span>SCENT</h5>
       </a>
-      <p class="text-body-secondary fw-light">Copyright &copy; {new Date().getFullYear()}<br>All rights reserved.</p>
+      <p class="text-body-secondary fw-light">&copy; {new Date().getFullYear()} - Todos los derechos reservados.</p>
     </div>
 
     <div class="col mb-3">
     </div>
 
     <div class="col mb-3">
-      <h6 class="fw-light text-body-secondary">PARTNERS</h6>
+      <h6 class="fw-light text-body-secondary">SOCIOS</h6>
       <ul class="nav">
         {logos.map((logo) => (
           <li class="nav-item me-3">
@@ -97,7 +97,7 @@ const logos = [
     </div>
 
     <div class="col mb-3">
-      <h6 class="fw-light text-body-secondary">FOLLOW US</h6>
+      <h6 class="fw-light text-body-secondary">SEGUINOS</h6>
       <ul class="nav">
         {
           redes.map((red)=> (
@@ -108,7 +108,7 @@ const logos = [
     </div>
 
     <div class="col mb-3">
-      <h6 class="fw-light text-body-secondary">SITE MAP</h6>
+      <h6 class="fw-light text-body-secondary">MAPA DE SITIO</h6>
       <ul class="nav flex-column">
         {
           links.map((link)=>(

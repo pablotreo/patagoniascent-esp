@@ -1,32 +1,32 @@
 ---
 const links = [
-  {
-    name: 'about us',
-    href: '#aboutus',
+{
+    name: 'nosotros',
+    href: '/#nosotros',
   },
   {
-    name: 'mountaineering',
-    href: '#mountaineering',
+    name: 'montaña',
+    href: '/#montana',
   },
   {
-    name: 'climbing',
-    href: '#climbing',
+    name: 'escalada',
+    href: '/#escalada',
   },
   {
-    name: 'skiing',
-    href: '#skiing',
+    name: 'esquí',
+    href: '/#esqui',
   },
   {
-    name: 'creston-experience',
-    href: '/#creston-experience',
+    name: 'experiencia creston',
+    href: '/#experiencia-creston',
   },
   {
-    name: 'courses',
-    href: '#courses',
+    name: 'cursos',
+    href: '/#cursos',
   },
   {
-    name: 'contact us',
-    href: 'contactus',
+    name: 'contacto',
+    href: '/contacto',
   },
 ]
 const redes = [
@@ -76,14 +76,14 @@ const logos = [
         <a href="/" class="d-flex align-items-center mb-1 link-body-emphasis text-decoration-none">
           <h4 class="fw-lighter text-footer-index"><span class="fw-light">PATAGONIA</span>SCENT</h4>
         </a>
-        <p class="text-footer-index fw-lighter">Copyright &copy; {new Date().getFullYear()}<br>All rights reserved.</p>
+        <p class="text-footer-index fw-lighter">&copy; {new Date().getFullYear()} - Todos los derechos reservados.</p>
       </div>
 
       <div class="col mb-3">
       </div>
 
       <div class="col mb-3">
-        <h6 class="fw-light text-footer-index">FOLOW US</h6>
+        <h6 class="fw-light text-footer-index">SEGUINOS</h6>
         <ul class="nav">
           {
             redes.map((red)=> (
@@ -94,7 +94,7 @@ const logos = [
       </div>
 
       <div class="col mb-3">
-        <h6 class="fw-light text-footer-index">PARTNERS</h6>
+        <h6 class="fw-light text-footer-index">SOCIOS</h6>
         <ul class="nav">
           {logos.map((logo) => (
             <li class="nav-item me-3">
@@ -108,7 +108,7 @@ const logos = [
       </div>
 
       <div class="col mb-3">
-        <h6 class="fw-light text-footer-index">SITE MAP</h6>
+        <h6 class="fw-light text-footer-index">MAPA DE SITIO</h6>
         <ul class="nav flex-column">
           {
             links.map((link)=>(
