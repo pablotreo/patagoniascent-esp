@@ -1,0 +1,72 @@
+---
+import LayoutPaginas from '../../layouts/LayoutPaginas.astro'
+import Content from '../../components/paginas/Content.astro'
+import Titulo from '../../components/paginas/Titulo.astro'
+import Slider from '../../components/paginas/Slider.astro'
+
+const fotos = [
+  {
+    alt: 'Aguja S',
+    srcFotos: '/img/paginas/slider/climbing/agujas/aguja_s1.jpg',
+    srcThum: '/img/paginas/slider/climbing/agujas/aguja_sMINI1.jpg',
+  },
+  {
+    alt: 'Aguja S',
+    srcFotos: '/img/paginas/slider/climbing/agujas/aguja_s2.jpg',
+    srcThum: '/img/paginas/slider/climbing/agujas/aguja_sMINI2.jpg',
+  },
+  {
+    alt: 'Aguja S',
+    srcFotos: '/img/paginas/slider/climbing/agujas/aguja_s3.jpg',
+    srcThum: '/img/paginas/slider/climbing/agujas/aguja_sMINI3.jpg',
+  },
+  {
+    alt: 'Aguja S',
+    srcFotos: '/img/paginas/slider/climbing/agujas/aguja_s4.jpg',
+    srcThum: '/img/paginas/slider/climbing/agujas/aguja_sMINI4.jpg',
+  },
+  {
+    alt: 'Aguja S',
+    srcFotos: '/img/paginas/slider/climbing/agujas/aguja_s5.jpg',
+    srcThum: '/img/paginas/slider/climbing/agujas/aguja_sMINI5.jpg',
+  },
+]
+
+---
+
+<LayoutPaginas title="Escalada en Chalten | Aguja S" description="">
+  <div class="container text-start px-3 px-lg-5">
+
+    <Titulo title=' Escalada en Chalten' />
+
+    <div class="container text-center px-lg-5">
+      <div class="row">
+
+        <Content
+          title='Aguja S' 
+          description='Aguja del Cordón del Fitz Roy, 2335msnm, imponente vistas es una de sus cualidades. Al llegar al cool entre esta y la aguja Saint Exuperi, tenemos una gran vista del valle del Cº torre y de este gigante. Una escalada típica de Patagonia, grandes pedreros y el tránsito por el glaciar Blanco es uno de los grandes objetivos a vencer para llegar al pie de esta aguja.'
+          difficulty=' Alta'
+          duration=' 3 días'
+          pax=' 1 o 2 personmas'
+          time=' Noviembre a Marzo'
+          hrefitinerary='/itinerarios/escalada/AgujaS.pdf'
+
+          link1=' Escalada'
+          href1='/#escalada'
+          link2=' Aguja S'
+          href2='/escalada/aguja-s'
+
+        />
+
+        <Slider miArray={fotos} />
+
+      </div>
+    </div>
+  </div>
+</LayoutPaginas>
+
+<style>
+  
+</style>
+
+

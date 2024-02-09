@@ -1,0 +1,72 @@
+---
+import LayoutPaginas from '../../layouts/LayoutPaginas.astro'
+import Content from '../../components/paginas/Content.astro'
+import Titulo from '../../components/paginas/Titulo.astro'
+import Slider from '../../components/paginas/Slider.astro'
+
+const fotos = [
+  {
+    alt: 'Cerro Fitz Roy',
+    srcFotos: '/img/paginas/slider/climbing/cerrofitzroy/fitzroy1.jpg',
+    srcThum: '/img/paginas/slider/climbing/cerrofitzroy/fitzroythumb1.jpg',
+  },
+  {
+    alt: 'Cerro Fitz Roy',
+    srcFotos: '/img/paginas/slider/climbing/cerrofitzroy/fitzroy2.jpg',
+    srcThum: '/img/paginas/slider/climbing/cerrofitzroy/fitzroythumb2.jpg',
+  },
+  {
+    alt: 'Cerro Fitz Roy',
+    srcFotos: '/img/paginas/slider/climbing/cerrofitzroy/fitzroy6.jpg',
+    srcThum: '/img/paginas/slider/climbing/cerrofitzroy/fitzroythumb6.jpg',
+  },
+  {
+    alt: 'Cerro Fitz Roy',
+    srcFotos: '/img/paginas/slider/climbing/cerrofitzroy/fitzroy7.jpg',
+    srcThum: '/img/paginas/slider/climbing/cerrofitzroy/fitzroythumb7.jpg',
+  },
+  {
+    alt: 'Cerro Fitz Roy',
+    srcFotos: '/img/paginas/slider/climbing/cerrofitzroy/fitzroy5.jpg',
+    srcThum: '/img/paginas/slider/climbing/cerrofitzroy/fitzroythumb5.jpg',
+  },
+]
+
+---
+
+<LayoutPaginas title="Escalada en Chalten | Cerro Fitz Roy" description="">
+  <div class="container text-start px-3 px-lg-5">
+
+    <Titulo title=' Escalada en Chalten' />
+
+    <div class="container text-center px-lg-5">
+      <div class="row">
+
+        <Content
+          title='Cerro Fitz Roy' 
+          description='El gran colosal de Patagonia, 3445msnm, es una de las montañas más codiciadas por grandes alpinistas y escaladores de argentina y el mundo. Rutas como Franco-Argentina, Supercanaleta, Californiana, Afanasief son algunas de las más intentadas y ascendidas en este cerro.'
+          difficulty=' Muy alta'
+          duration=' 4 a 5 días'
+          pax=' 1 persona'
+          time=' Noviembre a Marzo'
+          hrefitinerary='/itinerarios/escalada/CerroFitzRoy.pdf'
+
+          link1=' Escalada'
+          href1='/#escalada'
+          link2=' Cerro Fitz Roy'
+          href2='/escalada/cerro-fitz-roy'
+
+        />
+
+        <Slider miArray={fotos} />
+
+      </div>
+    </div>
+  </div>
+</LayoutPaginas>
+
+<style>
+  
+</style>
+
+

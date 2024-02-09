@@ -1,0 +1,72 @@
+---
+import LayoutPaginas from '../../layouts/LayoutPaginas.astro'
+import Content from '../../components/paginas/Content.astro'
+import Titulo from '../../components/paginas/Titulo.astro'
+import Slider from '../../components/paginas/Slider.astro'
+
+const fotos = [
+  {
+    alt: 'Cerro Mocho',
+    srcFotos: '/img/paginas/slider/climbing/cerromocho/cerromocho01.jpg',
+    srcThum: '/img/paginas/slider/climbing/cerromocho/cerromocho01MINI.jpg',
+  },
+  {
+    alt: 'Cerro Mocho',
+    srcFotos: '/img/paginas/slider/climbing/cerromocho/cerromocho02.jpg',
+    srcThum: '/img/paginas/slider/climbing/cerromocho/cerromocho02MINI.jpg',
+  },
+  {
+    alt: 'Cerro Mocho',
+    srcFotos: '/img/paginas/slider/climbing/cerromocho/cerromocho03.jpg',
+    srcThum: '/img/paginas/slider/climbing/cerromocho/cerromocho03MINI.jpg',
+  },
+  {
+    alt: 'Cerro Mocho',
+    srcFotos: '/img/paginas/slider/climbing/cerromocho/cerromocho04.jpg',
+    srcThum: '/img/paginas/slider/climbing/cerromocho/cerromocho04MINI.jpg',
+  },
+  {
+    alt: 'Cerro Mocho',
+    srcFotos: '/img/paginas/slider/climbing/cerromocho/cerromocho05.jpg',
+    srcThum: '/img/paginas/slider/climbing/cerromocho/cerromocho05MINI.jpg',
+  },
+]
+
+---
+
+<LayoutPaginas title="Escalada en Chalten | Cerro Mocho" description="">
+  <div class="container text-start px-3 px-lg-5">
+
+    <Titulo title=' Escalada en Chalten' />
+
+    <div class="container text-center px-lg-5">
+      <div class="row">
+
+        <Content
+          title='Cerro Mocho' 
+          description='En las nacientes del Cerro Torre esta esta particular formación que por su cumbre plana recibe su nombre. Para aquellos escaladores que disfrutan con la escalada un poco más exigente en roca, es un gran objetivo, 1953 msnm. Hermosas fisuras y diedros en muy buen granito son la debilidad de todo escalador, imponente vista de majestuoso Cerro torre.'
+          difficulty=' Alta'
+          duration=' 3 días'
+          pax=' 1 o 2 personas'
+          time=' Noviembre a Marzo'
+          hrefitinerary='/itinerarios/escalada/CerroMocho.pdf'
+
+          link1=' Escalada'
+          href1='/#escalada'
+          link2=' Cerro Mocho'
+          href2='/escalada/cerro-mocho'
+
+        />
+
+        <Slider miArray={fotos} />
+
+      </div>
+    </div>
+  </div>
+</LayoutPaginas>
+
+<style>
+  
+</style>
+
+

@@ -1,0 +1,72 @@
+---
+import LayoutPaginas from '../../layouts/LayoutPaginas.astro'
+import Content from '../../components/paginas/Content.astro'
+import Titulo from '../../components/paginas/Titulo.astro'
+import Slider from '../../components/paginas/Slider.astro'
+
+const fotos = [
+  {
+    alt: 'Cerro Torre',
+    srcFotos: '/img/paginas/slider/climbing/cerrotorre/cerrotorre1.jpg',
+    srcThum: '/img/paginas/slider/climbing/cerrotorre/cerrotorrethumb1.jpg',
+  },
+  {
+    alt: 'Cerro Torre',
+    srcFotos: '/img/paginas/slider/climbing/cerrotorre/cerrotorre14.jpg',
+    srcThum: '/img/paginas/slider/climbing/cerrotorre/cerrotorrethumb14.jpg',
+  },
+  {
+    alt: 'Cerro Torre',
+    srcFotos: '/img/paginas/slider/climbing/cerrotorre/cerrotorre11.jpg',
+    srcThum: '/img/paginas/slider/climbing/cerrotorre/cerrotorrethumb11.jpg',
+  },
+  {
+    alt: 'Cerro Torre',
+    srcFotos: '/img/paginas/slider/climbing/cerrotorre/cerrotorre8.jpg',
+    srcThum: '/img/paginas/slider/climbing/cerrotorre/cerrotorrethumb8.jpg',
+  },
+  {
+    alt: 'Cerro Torre',
+    srcFotos: '/img/paginas/slider/climbing/cerrotorre/cerrotorre13.jpg',
+    srcThum: '/img/paginas/slider/climbing/cerrotorre/cerrotorrethumb13.jpg',
+  },
+]
+
+---
+
+<LayoutPaginas title="Escalada en Chalten | Cerro Torre" description="">
+  <div class="container text-start px-3 px-lg-5">
+
+    <Titulo title=' Escalada en Chalten' />
+
+    <div class="container text-center px-lg-5">
+      <div class="row">
+
+        <Content
+          title='Cerro Torre' 
+          description='La montaña considerada por muchos años invencible, 3102msnm, donde ningún hombre podría poner sus pies en su cima. La más estética de las montañas en Patagonia y el mundo. Con una gran cantidad de historias de grandes escaladores es el objetivo más preciado por todo escalador.'
+          difficulty=' Muy Alta'
+          duration=' 5 a 7 días'
+          pax=' 1 persona'
+          time=' Noviembre a Marzo'
+          hrefitinerary='/itinerarios/escalada/CerroTorre.pdf'
+
+          link1=' Escalada'
+          href1='/#escalada'
+          link2=' Cerro Torre'
+          href2='/escalada/cerro-torre'
+
+        />
+
+        <Slider miArray={fotos} />
+
+      </div>
+    </div>
+  </div>
+</LayoutPaginas>
+
+<style>
+  
+</style>
+
+
