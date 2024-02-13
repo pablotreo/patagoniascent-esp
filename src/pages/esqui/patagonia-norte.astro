@@ -1,0 +1,87 @@
+---
+import LayoutPaginas from '../../layouts/LayoutPaginas.astro'
+import Titulo from '../../components/paginas/Titulo.astro'
+import Slider from '../../components/paginas/Slider.astro'
+
+const fotos = [
+  {
+    alt: 'Patagonia Norte',
+    srcFotos: '/img/paginas/slider/skiing/northpatagonia/patagonianorte1.jpg',
+    srcThum: '/img/paginas/slider/skiing/northpatagonia/patagonianortethumb1.jpg',
+  },
+  {
+    alt: 'Patagonia Norte',
+    srcFotos: '/img/paginas/slider/skiing/northpatagonia/patagonianorte7.jpg',
+    srcThum: '/img/paginas/slider/skiing/northpatagonia/patagonianortethumb7.jpg',
+  },
+  {
+    alt: 'Patagonia Norte',
+    srcFotos: '/img/paginas/slider/skiing/northpatagonia/patagonianorte3.jpg',
+    srcThum: '/img/paginas/slider/skiing/northpatagonia/patagonianortethumb3.jpg',
+  },
+  {
+    alt: 'Patagonia Norte',
+    srcFotos: '/img/paginas/slider/skiing/northpatagonia/patagonianorte11.jpg',
+    srcThum: '/img/paginas/slider/skiing/northpatagonia/patagonianortethumb11.jpg',
+  },
+  {
+    alt: 'Patagonia Norte',
+    srcFotos: '/img/paginas/slider/skiing/northpatagonia/patagonianorte12.jpg',
+    srcThum: '/img/paginas/slider/skiing/northpatagonia/patagonianortethumb12.jpg',
+  },
+]
+
+---
+
+<LayoutPaginas title="Esquí en Patagonia Norte" description="">
+  <div class="container text-start px-3 px-lg-5">
+
+    <Titulo title=' Esquí en Patagonia Norte' />
+
+    <div class="container text-center px-lg-5">
+      <div class="row">
+
+        <div class="col-auto col-lg-6 py-2 px-0">
+          <nav aria-label="breadcrumb">
+            <ol class="breadcrumb my-2">
+              <li class="breadcrumb-item"><a class="text-decoration-none text-body-secondary" href="/">Home</a></li>
+              <li class="breadcrumb-item active"><a class="text-decoration-none text-body-secondary" href="/#esqui">Equí</a></li>
+              <li class="breadcrumb-item active"><a class="text-decoration-none text-body-secondary" href="/esqui/patagonia-norte">Patagonia Norte</a></li>
+            </ol>
+          </nav>
+          <h3 class="fs-3 fw-normal text-start text-body-secondary border-top pt-3">Bariloche y Alrededores</h3>
+          <div class="texto fw-light ls-1 fs-5 text-start fst-italic text-body-secondary pe-0 pe-lg-4">
+            <p>Estos viajes de esquí en la zona de Bariloche y sus alrededores nos llevarán a diferentes lugares en busca de las mejores condiciones de nieve y tiempo. Fantásticas vistas de esta región será nuestra recompensa al esfuerzo realizado.</p>
+            <ul class="list-unstyled">
+              <li><i class="me-1 fa-sharp fa-solid fa-chevron-right" style="color: #58585a;"></i><a href="/esqui/patagonia-norte/esqui-refugio-frey" class="link-offset-2 link-underline-opacity-0 link-underline-opacity-100-hover fs-5 mb-1 fw-normal link-secondary fst-normal text-body-secondary icon-link" role="button" aria-label="Refugio Frey">Refugio Frey</a></li>
+
+              <li><i class="me-1 fa-sharp fa-solid fa-chevron-right" style="color: #58585a;"></i><a href="/esqui/patagonia-norte/refugio-jakob" class="link-offset-2 link-underline-opacity-0 link-underline-opacity-100-hover fs-5 mb-1 fw-normal link-secondary fst-normal text-body-secondary icon-link " role="button" aria-label="Refugio Jakob"></i>Refugio Jakob</a></li>
+
+              <li><i class="me-1 fa-sharp fa-solid fa-chevron-right" style="color: #58585a;"></i><a href="/esqui/patagonia-norte/refugio-lopez" class="link-offset-2 link-underline-opacity-0 link-underline-opacity-100-hover fs-5 mb-1 fw-normal link-secondary fst-normal text-body-secondary icon-link " role="button" aria-label="Refugio Lopez"></i>Refugio Lopez</a></li>
+              
+              <li><i class="me-1 fa-sharp fa-solid fa-chevron-right" style="color: #58585a;"></i><a href="/esqui/patagonia-norte/lodge-baguales" class="link-offset-2 link-underline-opacity-0 link-underline-opacity-100-hover fs-5 mb-1 fw-normal link-secondary fst-normal text-body-secondary icon-link " role="button" aria-label="Lodge Baguales"></i>Lodge Baguales</a></li>
+              
+              <li><i class="me-1 fa-sharp fa-solid fa-chevron-right" style="color: #58585a;"></i><a href="/esqui/patagonia-norte/refugio-piltriquitron" class="link-offset-2 link-underline-opacity-0 link-underline-opacity-100-hover fs-5 mb-1 fw-normal link-secondary fst-normal text-body-secondary icon-link " role="button" aria-label="Refugio Piltriquitron"></i>Refugio Piltriquitron</a></li>
+
+              <li><i class="me-1 fa-sharp fa-solid fa-chevron-right" style="color: #58585a;"></i><a href="/esqui/patagonia-norte/full-day-ski-tour-bariloche" class="link-offset-2 link-underline-opacity-0 link-underline-opacity-100-hover fs-5 mb-1 fw-normal link-secondary fst-normal text-body-secondary icon-link " role="button" aria-label="Full Day Ski Tour in Bariloche"></i>Full Day Ski Tour in Bariloche</a></li>
+            </ul>
+          </div>    
+        </div>
+
+        <Slider miArray={fotos} />
+
+      </div>
+    </div>
+  </div>
+</LayoutPaginas>
+
+<style>
+  .menu-section a:hover {
+    /*background-color: rgb(0,0,0,.6);*/
+    font-weight: bold;
+    color: rgba(255,255,255);
+    text-decoration: underline;
+  }
+</style>
+
+

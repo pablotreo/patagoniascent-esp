@@ -1,0 +1,90 @@
+---
+import LayoutPaginas from '../../layouts/LayoutPaginas.astro'
+import Titulo from '../../components/paginas/Titulo.astro'
+import Slider from '../../components/paginas/Slider.astro'
+
+const fotos = [
+  {
+    alt: 'Esquí en Patagonia Sur',
+    srcFotos: '/img/paginas/slider/skiing/southpatagonia/patagoniasur7.jpg',
+    srcThum: '/img/paginas/slider/skiing/southpatagonia/patagoniasurthumb7.jpg',
+  },
+  {
+    alt: 'Esquí en Patagonia Sur',
+    srcFotos: '/img/paginas/slider/skiing/southpatagonia/patagoniasur8.jpg',
+    srcThum: '/img/paginas/slider/skiing/southpatagonia/patagoniasurthumb8.jpg',
+  },
+  {
+    alt: 'Esquí en Patagonia Sur',
+    srcFotos: '/img/paginas/slider/skiing/southpatagonia/patagoniasur9.jpg',
+    srcThum: '/img/paginas/slider/skiing/southpatagonia/patagoniasurthumb9.jpg',
+  },
+  {
+    alt: 'Esquí en Patagonia Sur',
+    srcFotos: '/img/paginas/slider/skiing/southpatagonia/patagoniasur2.jpg',
+    srcThum: '/img/paginas/slider/skiing/southpatagonia/patagoniasurthumb2.jpg',
+  },
+  {
+    alt: 'Esquí en Patagonia Sur',
+    srcFotos: '/img/paginas/slider/skiing/southpatagonia/patagoniasur10.jpg',
+    srcThum: '/img/paginas/slider/skiing/southpatagonia/patagoniasurthumb10.jpg',
+  },
+]
+
+---
+
+<LayoutPaginas title="Esquí en Patagonia Sur" description="">
+  <div class="container text-start px-3 px-lg-5">
+
+    <Titulo title=' Esquí en Patagonia Sur' />
+
+    <div class="container text-center px-lg-5">
+      <div class="row">
+
+        <div class="col-auto col-lg-6 py-2 px-0">
+          <nav aria-label="breadcrumb">
+            <ol class="breadcrumb my-2">
+              <li class="breadcrumb-item"><a class="text-decoration-none text-body-secondary" href="/">Home</a></li>
+              <li class="breadcrumb-item active"><a class="text-decoration-none text-body-secondary" href="/#esqui">Esquí</a></li>
+              <li class="breadcrumb-item active"><a class="text-decoration-none text-body-secondary" href="/esqui/patagonia-sur">Patagonia Sur</a></li>
+            </ol>
+          </nav>
+          <h3 class="fs-3 fw-normal text-start text-body-secondary border-top pt-3">El Chalten y Alrededores</h3>
+          <div class="texto fw-light ls-1 fs-5 text-start fst-italic text-body-secondary pe-0 pe-lg-4">
+            <p>El Chaltén es uno de los mejores e inexploradas áreas de esquí de montaña en la Argentina, con una temporada de invierno amplia y de magnífica nieve. La gran variedad de lugares, orientaciones e inclinaciones lo hacen posible en la parctica de esquí con el clima patagónico.<br>
+            La esquiada en medio de las grandes montañas, como lo son el Fitz Roy y Cerro torr e lo hacen único. De uno a diez días de esquí, en la mejor nieve de Patagonia en la pequeña localidad de El Chalten es un gran objetivo de tu aventura. Cerro Vespignani, Mosquito, Crestón y Madsen son algunos de los lugares a visitar en Patagonia.</p>
+            <ul class="list-unstyled">
+            
+            <li><i class="me-1 fa-sharp fa-solid fa-chevron-right" style="color: #58585a;"></i><a href="/esqui/patagonia-sur/cerro-vespignani" class="link-offset-2 link-underline-opacity-0 link-underline-opacity-100-hover fs-5 mb-1 fw-normal link-secondary fst-normal text-body-secondary icon-link" role="button" aria-label="Cerro Vespignani">Cerro Vespignani</a></li>
+
+            <li><i class="me-1 fa-sharp fa-solid fa-chevron-right" style="color: #58585a;"></i><a href="/esqui/patagonia-sur/valle-cerro-creston" class="link-offset-2 link-underline-opacity-0 link-underline-opacity-100-hover fs-5 mb-1 fw-normal link-secondary fst-normal text-body-secondary icon-link" role="button" aria-label="Valle del Cerro Crestón">Valle del Cerro Crestón</a></li>
+            
+            <li><i class="me-1 fa-sharp fa-solid fa-chevron-right" style="color: #58585a;"></i><a href="/esqui/patagonia-sur/valle-mosquito" class="link-offset-2 link-underline-opacity-0 link-underline-opacity-100-hover fs-5 mb-1 fw-normal link-secondary fst-normal text-body-secondary icon-link" role="button" aria-label="Valle Mosquito">Valle del Mosquito</a></li>
+
+            <li><i class="me-1 fa-sharp fa-solid fa-chevron-right" style="color: #58585a;"></i><a href="/esqui/patagonia-sur/cerro-electrico" class="link-offset-2 link-underline-opacity-0 link-underline-opacity-100-hover fs-5 mb-1 fw-normal link-secondary fst-normal text-body-secondary icon-link" role="button" aria-label="Cerro Eléctrico">Cerro Eléctrico</a></li>
+    
+            <li><i class="me-1 fa-sharp fa-solid fa-chevron-right" style="color: #58585a;"></i><a href="/esqui/patagonia-sur/cerro-madsen" class="link-offset-2 link-underline-opacity-0 link-underline-opacity-100-hover fs-5 mb-1 fw-normal link-secondary fst-normal text-body-secondary icon-link" role="button" aria-label="Cerro Madsen">Cerro Madsen</a></li>
+            
+            <li><i class="me-1 fa-sharp fa-solid fa-chevron-right" style="color: #58585a;"></i><a href="/esqui/patagonia-sur/full-day-esqui-chalten" class="link-offset-2 link-underline-opacity-0 link-underline-opacity-100-hover fs-5 mb-1 fw-normal link-secondary fst-normal text-body-secondary icon-link" role="button" aria-label="Full Day Esquí de Montaña">Full Day Esquí de Montaña</a></li>
+          
+            <li><i class="me-1 fa-sharp fa-solid fa-chevron-right" style="color: #58585a;"></i><a href="/esqui/patagonia-sur/fin-semana-esqui-chalten" class="link-offset-2 link-underline-opacity-0 link-underline-opacity-100-hover fs-5 mb-1 fw-normal link-secondary fst-normal text-body-secondary icon-link" role="button" aria-label="Fin de Semana Esquí en Chalten.">Fin de Semana Esquí en Chalten</a></li>
+            
+            <li><i class="me-1 fa-sharp fa-solid fa-chevron-right" style="color: #58585a;"></i><a href="/esqui/patagonia-sur/una-semana-esqui-chalten" class="link-offset-2 link-underline-opacity-0 link-underline-opacity-100-hover fs-5 mb-1 fw-normal link-secondary fst-normal text-body-secondary icon-link" role="button" aria-label=" Una semana, Esquí en Chalten.">Una Semana Esquí en Chalten</a></li>
+
+          </ul>
+
+          </div>    
+        </div>
+
+        <Slider miArray={fotos} />
+
+      </div>
+    </div>
+  </div>
+</LayoutPaginas>
+
+<style>
+  
+</style>
+
+
