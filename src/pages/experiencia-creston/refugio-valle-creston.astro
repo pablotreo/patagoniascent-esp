@@ -1,0 +1,83 @@
+---
+import LayoutPaginas from '../../layouts/LayoutPaginas.astro'
+import Titulo from '../../components/paginas/Titulo.astro'
+import Slider from '../../components/paginas/Slider.astro'
+
+const fotos = [
+  {
+    alt: 'Refugio Valle Del Creston',
+    srcFotos: '/img/paginas/slider/creston/creston-refuge/creston-refuge-10.jpg',
+    srcThum: '/img/paginas/slider/creston/creston-refuge/creston-refuge-thumb-10.jpg',
+  },
+  {
+    alt: 'Refugio Valle Del Creston',
+    srcFotos: '/img/paginas/slider/creston/creston-refuge/creston-refuge-9.jpg',
+    srcThum: '/img/paginas/slider/creston/creston-refuge/creston-refuge-thumb-9.jpg',
+  },
+  {
+    alt: 'Refugio Valle Del Creston',
+    srcFotos: '/img/paginas/slider/creston/creston-refuge/creston-refuge-3.jpg',
+    srcThum: '/img/paginas/slider/creston/creston-refuge/creston-refuge-thumb-3.jpg',
+  },
+  {
+    alt: 'Refugio Valle Del Creston',
+    srcFotos: '/img/paginas/slider/creston/creston-refuge/creston-refuge-8.jpg',
+    srcThum: '/img/paginas/slider/creston/creston-refuge/creston-refuge-thumb-8.jpg',
+  },
+  {
+    alt: 'Refugio Valle Del Creston',
+    srcFotos: '/img/paginas/slider/creston/creston-refuge/creston-refuge-11.jpg',
+    srcThum: '/img/paginas/slider/creston/creston-refuge/creston-refuge-thumb-11.jpg',
+  },
+]
+
+---
+
+<LayoutPaginas title="Experiencia Crestón | Refugio Valle Del Creston" description="">
+  <div class="container text-start px-3 px-lg-5">
+
+    <Titulo title=' Refugio Valle Del Creston' />
+
+    <div class="container text-center px-lg-5">
+      <div class="row">
+        <div class="col-auto col-lg-6 py-2 px-0">
+          <nav aria-label="breadcrumb">
+            <ol class="breadcrumb my-2">
+              <li class="breadcrumb-item"><a class="text-decoration-none text-body-secondary" href="/">Home</a></li>
+              <li class="breadcrumb-item active"><a class="text-decoration-none text-body-secondary" href="/#experiencia-creston">Experiencia Crestón </a></li>
+              <li class="breadcrumb-item active"><a class="text-decoration-none text-body-secondary" href="/experiencia-creston/refugio-valle-creston">Refugio del Crestón</a></li>
+            </ol>
+          </nav>
+          <h3 class="fs-3 fw-normal text-start text-body-secondary border-top pt-3">Dormir entre Montañas</h3>
+          <div class="texto fw-light ls-1 fs-5 text-start fst-italic text-body-secondary pe-0 pe-lg-4">
+            <p>Descubre este acogedor refugio ubicado en el valle del Cerro Crestón, al sur del Lago del Desierto. Para acceder, se debe seguir un sendero a pie de aproximadamente 2 km de longitud y con un desnivel de 200 metros desde el estacionamiento en la RP 41.
+            El refugio se compone de dos domos principales. El primero de ellos alberga la sala de estar y la cocina, donde se sirven desayunos y cenas. El segundo cuenta con un dormitorio, con capacidad para 12 camas. En una tercera estructura se ubican los baños y duchas, provistos de agua caliente y fría.
+            Con el objetivo de reducir al mínimo el impacto ambiental y promover la sostenibilidad, cada aspecto relacionado con el entorno fue evaluado tanto durante la construcción como en la operación del refugio. Todos los materiales utilizados fueron transportados de forma manual para evitar la creación de nuevos senderos. Además, se implementó un sistema para tratar las aguas residuales y grises in situ, y se dispone de energía solar las 24 horas del día.
+            Durante la temporada estival, los visitantes pueden disfrutar de caminatas en el bosque que llevan a miradores exclusivos del Cerro Fitz Roy, el Lago del Desierto y los glaciares circundantes. Para aquellos con experiencia previa y que contraten un guía de montaña, existe la posibilidad de realizar una travesía en el glaciar Crestón y ascender hasta su estética cumbre.
+            En invierno, este valle se convierte en un lugar excepcional para la práctica del esquí de travesía, apto tanto para principiantes como para expertos, así como para recorrer el valle con raquetas de nieve.</p>
+            <p class="mb-1"><b>Instalaciones:</b> </p>
+            <p class="mb-1">- Domo cocina comedor con calefacción a leña.</p>
+            <p class="mb-1">- Domo dormitorio con 10 camas tipo literas y dos camas adicionales. Dispone de calefacción a leña y se proporciona bolsa de dormir con liner.</p>
+            <p class="mb-1">- Baños en construcción clásica con ducha y agua caliente.</p>
+            <p class="mb-4">- Energía solar de 220 voltios.</p>
+              
+            <a href="/itinerarios/creston/RefugioValleCreston.pdf" target="_blank" class="fs-5 fw-normal link-secondary fst-normal text-body-secondary icon-link icon-link-hover link-offset-2-hover link-underline link-underline-opacity-0 link-underline-opacity-100-hover" role="button" aria-label="Descargar Itinerario">DESCARGAR ITINERARIO</a>
+            <i class="fa-solid fa-file-arrow-down bi text-decoration-none ms-2"></i>
+          </div>    
+        </div>
+
+        <Slider miArray={fotos} />
+
+      </div>
+    </div>
+  </div>
+</LayoutPaginas>
+
+<style>
+  .texto {
+    font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
+    letter-spacing: 1px; 
+  }
+</style>
+
+

@@ -1,0 +1,72 @@
+---
+import LayoutPaginas from '../../layouts/LayoutPaginas.astro'
+import Content from '../../components/paginas/Content.astro'
+import Titulo from '../../components/paginas/Titulo.astro'
+import Slider from '../../components/paginas/Slider.astro'
+
+const fotos = [
+  {
+    alt: 'Trekking Glaciar Crestón',
+    srcFotos: '/img/paginas/slider/creston/glacier-trek/glacier-trek-8.jpg',
+    srcThum: '/img/paginas/slider/creston/glacier-trek/glacier-trek-thumb-8.jpg',
+  },
+  {
+    alt: 'Trekking Glaciar Crestón',
+    srcFotos: '/img/paginas/slider/creston/glacier-trek/glacier-trek-3.jpg',
+    srcThum: '/img/paginas/slider/creston/glacier-trek/glacier-trek-thumb-3.jpg',
+  },
+  {
+    alt: 'Trekking Glaciar Crestón',
+    srcFotos: '/img/paginas/slider/creston/glacier-trek/glacier-trek-7.jpg',
+    srcThum: '/img/paginas/slider/creston/glacier-trek/glacier-trek-thumb-7.jpg',
+  },
+  {
+    alt: 'Trekking Glaciar Crestón',
+    srcFotos: '/img/paginas/slider/creston/glacier-trek/glacier-trek-1.jpg',
+    srcThum: '/img/paginas/slider/creston/glacier-trek/glacier-trek-thumb-1.jpg',
+  },
+  {
+    alt: 'Trekking Glaciar Crestón',
+    srcFotos: '/img/paginas/slider/creston/glacier-trek/glacier-trek-2.jpg',
+    srcThum: '/img/paginas/slider/creston/glacier-trek/glacier-trek-thumb-2.jpg',
+  },
+]
+
+---
+
+<LayoutPaginas title="Experiencia Crestón | Trekking Glaciar Crestón" description="">
+  <div class="container text-start px-3 px-lg-5">
+
+    <Titulo title=' Trekking Glaciar Crestón' />
+
+    <div class="container text-center px-lg-5">
+      <div class="row">
+
+        <Content
+          title=' Una Experiencia Única en El Chaltén' 
+          description='El valle del Crestón se encuentra situado en la zona del Lago Del Desierto, a unos 37 km al norte de El Chaltén, accesible por la RP 41. Este valle ofrece una amplia gama de opciones para aquellos que busquen experiencias nuevas lejos del bullicio y las multitudes. Con sus bosques de lengas, majestuosos glaciares y la imponente presencia del Cerro Crestón, nos brinda la oportunidad de explorar tanto los senderos dentro del bosque como uno de los glaciares más escénicos de la región.Después de una caminata suave a través del extenso bosque de lengas, llegarás a una vista maravillosa del glaciar y el Cerro Crestón. Al salir de la zona de bosque, caminarás sobre una gran formación rocosa erosionada por el glaciar. Este trayecto te llevará hasta su frente actual, donde comenzará tu aventura de trekking en glaciar y una práctica de escalada en hielo.'
+          difficulty=' Media'
+          duration=' 8 hs'
+          pax=' 1 a 12 personas'
+          time=' Diciembre a Marzo'
+          hrefitinerary='/itinerarios/creston/TrekkingGlaciarCreston.pdf'
+
+          link1=' Experiencia Crestón'
+          href1='/#experiencia-creston'
+          link2=' Glaciar Crestón'
+          href2='/experiencia-creston/trekking-glaciar-creston'
+
+        />
+
+        <Slider miArray={fotos} />
+
+      </div>
+    </div>
+  </div>
+</LayoutPaginas>
+
+<style>
+  
+</style>
+
+

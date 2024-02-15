@@ -1,0 +1,72 @@
+---
+import LayoutPaginas from '../../layouts/LayoutPaginas.astro'
+import Content from '../../components/paginas/Content.astro'
+import Titulo from '../../components/paginas/Titulo.astro'
+import Slider from '../../components/paginas/Slider.astro'
+
+const fotos = [
+  {
+    alt: ' Ascenso al Cerro Crestón',
+    srcFotos: '/img/paginas/slider/creston/creston-mountain-ascent/creston-mountain-ascent-4.jpg',
+    srcThum: '/img/paginas/slider/creston/creston-mountain-ascent/creston-mountain-ascent-thumb-4.jpg',
+  },
+  {
+    alt: ' Ascenso al Cerro Crestón',
+    srcFotos: '/img/paginas/slider/creston/creston-mountain-ascent/creston-mountain-ascent-3.jpg',
+    srcThum: '/img/paginas/slider/creston/creston-mountain-ascent/creston-mountain-ascent-thumb-3.jpg',
+  },
+  {
+    alt: ' Ascenso al Cerro Crestón',
+    srcFotos: '/img/paginas/slider/creston/creston-mountain-ascent/creston-mountain-ascent-5.jpg',
+    srcThum: '/img/paginas/slider/creston/creston-mountain-ascent/creston-mountain-ascent-thumb-5.jpg',
+  },
+  {
+    alt: ' Ascenso al Cerro Crestón',
+    srcFotos: '/img/paginas/slider/creston/creston-mountain-ascent/creston-mountain-ascent-1.jpg',
+    srcThum: '/img/paginas/slider/creston/creston-mountain-ascent/creston-mountain-ascent-thumb-1.jpg',
+  },
+  {
+    alt: ' Ascenso al Cerro Crestón',
+    srcFotos: '/img/paginas/slider/creston/creston-mountain-ascent/creston-mountain-ascent-2.jpg',
+    srcThum: '/img/paginas/slider/creston/creston-mountain-ascent/creston-mountain-ascent-thumb-2.jpg',
+  },
+]
+
+---
+
+<LayoutPaginas title="Experiencia Crestón |  Ascenso al Cerro Crestón" description="">
+  <div class="container text-start px-3 px-lg-5">
+
+    <Titulo title=' Ascenso al Cerro Crestón' />
+
+    <div class="container text-center px-lg-5">
+      <div class="row">
+
+        <Content
+          title=' Conquista tu Primera Cumbre en El Chaltén' 
+          description='El Cerro Crestón se sitúa en la zona del Lago Del Desierto, aproximadamente a 37 km al norte de El Chaltén y con acceso a través de la RP 41. Al alcanzar su cumbre escénica, podrás disfrutar de vistas impresionantes y únicas del Cerro Vespignani, el Cordón del Fitz Roy y el Campo de Hielo Sur. La ascensión a la cumbre del Cerro Crestón te llevará a través de una variedad de terrenos de montaña. Después de pasar la noche en el Refugio Valle del Crestón, iniciarás tu travesía por un sendero que serpentea a través de un bosque de lengas, cruzando arroyos y pequeñas cascadas. Desde allí, comenzarás a ascender por morrenas y slabs de roca erosionada por el glaciar, que finalizan al pie del Glaciar Crestón. En este punto, atravesar un terreno de nieve y hielo, navegando entre las grietas del glaciar, lo que te permitirá llegar al coll sur de la montaña. A partir de ahí, te dirigirás hacia la cima, ascendiendo por una arista estética con una inclinación de 50 grados y superando algunos tramos de terreno mixto.'
+          difficulty=' Media / Alta'
+          duration=' 2 días'
+          pax=' 1 a 2 personas'
+          time=' Octubre a Mayo'
+          hrefitinerary='/itinerarios/creston/AscensoCerroCreston.pdf'
+
+          link1=' Experiencia Crestón'
+          href1='/#experiencia-creston'
+          link2=' Ascenso Crestón'
+          href2='/experiencia-creston/ascenso-cerro-creston'
+
+        />
+
+        <Slider miArray={fotos} />
+
+      </div>
+    </div>
+  </div>
+</LayoutPaginas>
+
+<style>
+  
+</style>
+
+

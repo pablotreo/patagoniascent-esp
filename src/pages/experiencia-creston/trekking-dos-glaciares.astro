@@ -1,0 +1,72 @@
+---
+import LayoutPaginas from '../../layouts/LayoutPaginas.astro'
+import Content from '../../components/paginas/Content.astro'
+import Titulo from '../../components/paginas/Titulo.astro'
+import Slider from '../../components/paginas/Slider.astro'
+
+const fotos = [
+  {
+    alt: 'Trekking Mirador de los Dos Glaciares',
+    srcFotos: '/img/paginas/slider/creston/two-glacier/two-glacier-4.jpg',
+    srcThum: '/img/paginas/slider/creston/two-glacier/two-glacier-thumb-4.jpg',
+  },
+  {
+    alt: 'Trekking Mirador de los Dos Glaciares',
+    srcFotos: '/img/paginas/slider/creston/two-glacier/two-glacier-3.jpg',
+    srcThum: '/img/paginas/slider/creston/two-glacier/two-glacier-thumb-3.jpg',
+  },
+  {
+    alt: 'Trekking Mirador de los Dos Glaciares',
+    srcFotos: '/img/paginas/slider/creston/two-glacier/two-glacier-5.jpg',
+    srcThum: '/img/paginas/slider/creston/two-glacier/two-glacier-thumb-5.jpg',
+  },
+  {
+    alt: 'Trekking Mirador de los Dos Glaciares',
+    srcFotos: '/img/paginas/slider/creston/two-glacier/two-glacier-1.jpg',
+    srcThum: '/img/paginas/slider/creston/two-glacier/two-glacier-thumb-1.jpg',
+  },
+  {
+    alt: 'Trekking Mirador de los Dos Glaciares',
+    srcFotos: '/img/paginas/slider/creston/two-glacier/two-glacier-2.jpg',
+    srcThum: '/img/paginas/slider/creston/two-glacier/two-glacier-thumb-2.jpg',
+  },
+]
+
+---
+
+<LayoutPaginas title="Experiencia Crestón | Trekking Mirador de los Dos Glaciares" description="">
+  <div class="container text-start px-3 px-lg-5">
+
+    <Titulo title=' Trekking Mirador de los Dos Glaciares' />
+
+    <div class="container text-center px-lg-5">
+      <div class="row">
+
+        <Content
+          title=' Una Travesía Fuera de lo Convencional' 
+          description='Este trekking está diseñado para aquellos que buscan una experiencia distinta en zonas agrestes y apartadas de las multitudes, al norte del Parque Nacional Los Glaciares. Durante esta travesía, tendrás la oportunidad de maravillarte con las vistas espectaculares de los dos glaciares más importantes de la reserva del Lago del Desierto: el Glaciar Huemul y el Glaciar Crestón. Durante esta caminata, exploramos conectando dos valles, dos montañas y dos glaciares, todo ello desde el interior del bosque andino patagónico. A unos 37 km al norte de El Chaltén, por la RP 41, se encuentra el Lago Del Desierto, un lugar central en la creación del pueblo de El Chaltén. Desde este entorno, rodeado de majestuosas montañas, frondosos bosques, lagunas y glaciares, podremos divisar el Cerro Vespignani y el Cerro Crestón, centinelas de nuestro recorrido entre los valles homónimos. Opcional: Posibilidad de pernoctar en el Refugio Valle del Crestón.'
+          difficulty=' Baja / Media'
+          duration=' 5 horas'
+          pax=' 1 a 12 personas'
+          time=' Todo el año (en invierno se realiza con raquetas para nieve)'
+          hrefitinerary='/itinerarios/creston/TrekkingDosGlaciares.pdf'
+
+          link1=' Experiencia Crestón'
+          href1='/#experiencia-creston'
+          link2=' Trekking Dos Glaciares'
+          href2='/experiencia-creston/trekking-dos-glaciares'
+
+        />
+
+        <Slider miArray={fotos} />
+
+      </div>
+    </div>
+  </div>
+</LayoutPaginas>
+
+<style>
+  
+</style>
+
+
