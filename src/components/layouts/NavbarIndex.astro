@@ -52,22 +52,26 @@ const links = [
     name: 'CURSOS',
     href: '#cursos',
   },
-  // {
-  //   name: 'CONTACT US',
-  //   href: '/',
-  //   isExternal: 'false',
-  // },
+  
 ]
 const logos = [
   {
-    img: '../img/index/aagm.png',
-    href: 'https://www.aagm.com.ar/',
-    alt: 'AAGM',
+    img: '',
+    href: 'https://www.patagoniascent.com/',
+    alt: '',
+    class: 'fa-solid fa-globe translate',
   },
   {
-    img: '../img/index/uiagm.png',
+    img: '/img/index/aagm.png',
+    href: 'https://www.aagm.com.ar/',
+    alt: 'AAGM',
+    class: '',
+  },
+  {
+    img: '/img/index/uiagm.png',
     href: 'https://ifmga.info/',
     alt: 'UIAGM',
+    class: '',
   }
 ];
 ---
@@ -111,7 +115,7 @@ const logos = [
           {logos.map((logo) => (
               <li class="nav-item">
                 <a href={logo.href} target="_blanck" class="nav-link">
-                  <img src={logo.img} alt={logo.alt} class="d-none d-lg-block" />
+                  <img src={logo.img} alt={logo.alt} class={logo.class}"d-none d-lg-block" />
                 </a>
               </li>
             )
@@ -150,6 +154,10 @@ const logos = [
     .ul-redes {
       position: absolute; 
       padding-left: 2px;
+    }
+    .translate {
+      font-size: 18px;
+      line-height: unset;
     }
 
     @media (max-width: 575.98px) {
