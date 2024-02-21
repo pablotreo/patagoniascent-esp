@@ -60,18 +60,27 @@ const logos = [
     href: 'https://www.patagoniascent.com/',
     alt: '',
     class: 'fa-solid fa-globe translate',
+    datatoggle: 'tooltip',
+    datatitle: 'Eng/Esp',
+    target: '_self',
   },
   {
     img: '/img/index/aagm.png',
     href: 'https://www.aagm.com.ar/',
     alt: 'AAGM',
-    class: '',
+    class: 'd-none d-lg-block',
+    datatoggle: 'tooltip',
+    datatitle: '',
+    target: '_blanck',
   },
   {
     img: '/img/index/uiagm.png',
     href: 'https://ifmga.info/',
     alt: 'UIAGM',
-    class: '',
+    class: 'd-none d-lg-block',
+    datatoggle: 'tooltip',
+    datatitle: '',
+    target: '_blanck',
   }
 ];
 ---
@@ -114,8 +123,8 @@ const logos = [
 
           {logos.map((logo) => (
               <li class="nav-item">
-                <a href={logo.href} target="_blanck" class="nav-link">
-                  <img src={logo.img} alt={logo.alt} class={logo.class}"d-none d-lg-block" />
+                <a href={logo.href} target={logo.target} class="nav-link" data-bs-toggle="tooltip" data-bs-title="Another one here too">
+                  <img src={logo.img} alt={logo.alt} class={logo.class}/>
                 </a>
               </li>
             )
@@ -169,3 +178,5 @@ const logos = [
       }
     }
   </style>
+
+
