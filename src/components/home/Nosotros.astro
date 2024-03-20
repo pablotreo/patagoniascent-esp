@@ -4,9 +4,9 @@
 
 <section id="nosotros" class="about-us">
   <div class="container">
-    
-      <div id="about-shade-section" class="container-lg shape-shade-section">
-        <h3 class="fs-1">Sobre Nosotros</h3>
+    <div class="p-1">
+      <div id="about-shade-section">
+        <h1 class="display-5 lh-1">Sobre Nosotros</h1>
         <div class="row">
 
           <div class="col-lg-4 col-md-4 col-sm-12 col-xs-12">
@@ -15,8 +15,8 @@
                 <img src="./img/index/aboutus/JuanRaselliThumb.jpg" class="rounded-circle img-fluid border border-3" alt="Juan Raselli">
                 <div class="card">
                   <h4 class="fs-2">Juan Raselli</h4>
-                  <h5 class="fs-6">Guía de montaña UIAGM</h5>
-                  <a class="fs-6" href="nosotros/juan-raselli">MÁS INFO AQUÍ</a> 
+                  <h5 class="fs-6 d-none d-sm-none d-md-block">Guía de montaña UIAGM</h5>
+                  <a class="fs-6 link-offset-2" href="nosotros/juan-raselli">MÁS INFO AQUÍ</a> 
                 </div>
               </div>
             </div>
@@ -28,8 +28,8 @@
                 <img src="./img/index/aboutus/RobertoTreuThumb.jpg" class="rounded-circle img-fluid border border-3" alt="Roberto Treu">
                 <div class="card">
                   <h4 class="fs-2">Roberto Treu</h4>
-                  <h5 class="fs-6">Guía de montaña UIAGM</h5>
-                  <a class="fs-6" href="nosotros/roberto-treu">MÁS INFO AQUÍ</a> 
+                  <h5 class="fs-6 d-none d-sm-none d-md-block">Guía de montaña UIAGM</h5>
+                  <a class="fs-6 link-offset-2" href="nosotros/roberto-treu">MÁS INFO AQUÍ</a> 
                 </div>
               </div>
             </div>
@@ -41,8 +41,8 @@
                 <img src="./img/index/aboutus/TomasAguiloThumb.jpg" class="rounded-circle img-fluid border border-3" alt="Tomas Aguilo">
                 <div class="card">
                   <h4 class="fs-2">Tomás Aguiló</h4>
-                  <h5 class="fs-6">Guía de montaña UIAGM</h5>
-                  <a class="fs-6" href="nosotros/tomas-aguilo">MÁS INFO AQUÍ</a>
+                  <h5 class="fs-6 d-none d-sm-none d-md-block">Guía de montaña UIAGM</h5>
+                  <a class="fs-6 link-offset-2" href="nosotros/tomas-aguilo">MÁS INFO AQUÍ</a>
                 </div>
               </div>
             </div>
@@ -56,94 +56,65 @@
           </div>
         </div>
       </div>
-
+    </div>
   </div>
 </section>
 
 <style>
 
-.about-us {
-	height: 100vh;
-  min-height: 450px;
-	background-image: url("../img/index/secciones/aboutus.jpg");
- 	background-position: center; /* Center the image */
-  background-repeat: no-repeat; /* Do not repeat the image */
-  background-size: cover;/* Resize the background image to cover the entire container */
-  padding-top: 1px;
-}
-.shape-shade-section {
-	position: relative;
-  background-color: rgba(0,0,0,0.5);
-  padding: 40px 50px 40px 50px;
-  width: fit-content;
-  width: -moz-fit-content; 
-  margin-top: 102px; 
-}
-/* #about-shade-section{
-	position: relative;
+  .about-us {
+    height: 100%;
+    scroll-snap-align: start;
+    min-height: 900px;
+    background-image: url("../img/index/secciones/aboutus.jpg");
+    background-position: center; /* Center the image */
+    background-repeat: no-repeat; /* Do not repeat the image */
+    background-size: cover;/* Resize the background image to cover the entire container */
+  }
+  #about-shade-section {
+    position: relative;
     background-color: rgba(0,0,0,0.5);
-    padding: 40px 50px 40px 50px;
+    padding: 40px 40px 40px 40px;
     width: fit-content;
-    width: -moz-fit-content; 
-    margin-top: 97px; 
-	text-align: left;
-	clip-path: polygon(0px 0px, 970px 0px, 970px 494px, 921px 487px, 859px 443px, 642px 495px, 477px 461px, 213px 490px, 110px 444px, 22px 494px, 0px 494px);
-} */
-
-.card {
-	background-color: transparent;
-	border-radius: 0px;
-	border: none;
-	color: #FFFFFF;
-	margin-top: 20px;
-}
-.card h4 {
-	font-family: MuseoSlab;
-	color: #ffffff;
-	margin-bottom: 0px;
-}
-.card a{
-	color: #FFFFFF;
-	font-size: 14px;
-	font-family: MuseoSans300;
-}
-.texthome {
-	color: #FFFFFF;
-	font-family: MuseoSans100;
-}
-.rounded-circle {
-	width: 180px;
-}
+    margin-top: 99px;
+  }
+  .card {
+    background-color: transparent;
+    border-radius: 0px;
+    border: none;
+    color: #FFFFFF;
+    margin-top: 20px;
+  }
+  .card h4 {
+    font-family: MuseoSlab;
+    color: #ffffff;
+    margin-bottom: 0px;
+  }
+  .card a{
+    color: #FFFFFF;
+    font-size: 14px;
+    font-family: MuseoSans300;
+  }
+  .texthome {
+    color: #FFFFFF;
+    font-family: MuseoSans100;
+  }
+  .rounded-circle {
+    width: 180px;
+  }
 
 
 /*// Extra small devices (portrait phones, less than 576px)*/
 @media (max-width: 575.98px) {
-  .about-us{
-    min-height: 900px;
-  }
-	.shape-shade-section {
-		position: relative;
-	  height: fit-content;
-		width: -moz-fit-content;
-		width: fit-content;
-	  background-color: rgba(0,0,0,0.5);
-	  padding: 20px 40px 20px 15px;
-	  text-align: left;
-		margin-bottom: 50px;
-		clip-path: unset;
-	}
+  
 	#about-shade-section{
-		position: relative;
-	  margin-top: 102px; 
-	  height: fit-content;
-		width: -moz-fit-content;
-		width: fit-content;
-	  background-color: rgba(0,0,0,0.5);
-	  padding: 20px 20px 20px 15px;
-	  text-align: left;
-		margin-bottom: 50px;
-		clip-path: unset;
+	  padding: 30px 20px 30px 20px;
 	}
+  .rounded-circle {
+	  width: 100px;
+  }
+}
+@media (max-width: 768px) { 
   .rounded-circle {
 	  width: 100px;
   }

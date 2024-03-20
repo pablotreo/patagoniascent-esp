@@ -15,9 +15,9 @@
       <div class="container">
         <div class="carousel-caption">
           <div id="shape-shade-slider">
-            <h3 class="fs-1 lh-1"> Bienvenidos a <br>Patagonia Ascent <br>2024&#x2013;2025</h3>
+            <h3 class="display-4 lh-1"> Patagonia<br>2024&#x2013;2025</h3>
             <h2 class="fs-3 lh-1 mb-5 mb-md-4">Hacemos tus <br>sueños realidad</h2>
-            <a class="fs-6 link-slide" href="#montana">VEER INTINERARIOS DE MONTAÑA</a>
+            <a class="fs-6 link-offset-2 link-slide" href="#montana">VEER INTINERARIOS</a>
           </div>
         </div>
       </div>
@@ -27,9 +27,9 @@
       <div class="container">
         <div class="carousel-caption">
           <div id="shape-shade-slider">
-            <h3 class="fs-1 lh-1">El Chalten<br>Patagonia</h3>
-            <h2 class="fs-3 lh-1 mb-5 mb-md-4">Escalada en uno de los<br> mejores lugares del mundo</h2>
-            <a class="fs-6 link-slide" href="#escalada">VEER INTINERARIOS DE ESCALADA</a>
+            <h3 class="display-4 lh-1">El Chalten<br>Patagonia</h3>
+            <h2 class="fs-3 lh-1 mb-5 mb-md-4">Escalada en el mejor<br> lugar del mundo</h2>
+            <a class="fs-6 link-offset-2 link-slide" href="#escalada">VEER INTINERARIOS</a>
           </div>
         </div>
       </div>
@@ -39,9 +39,9 @@
       <div class="container">
         <div class="carousel-caption">
           <div id="shape-shade-slider">
-            <h3 class="fs-1 lh-1">Temporada de <br>Esquí 2024&#x2013;2025</h3>
+            <h3 class="display-4 lh-1">Temporada<br>Esquí 2024</h3>
             <h2 class="fs-3 lh-1 mb-5 mb-md-4">Esquí en el corazón<br>de la patagonia</h2>
-            <a class="fs-6 link-slide" href="#esqui">VEER INTINERARIOS DE ESQUÍ</a>
+            <a class="fs-6 link-offset-2 link-slide" href="#esqui">VEER INTINERARIOS</a>
           </div>
         </div>
       </div>
@@ -51,9 +51,9 @@
       <div class="container">
         <div class="carousel-caption">
           <div id="shape-shade-slider">
-            <h3 class="fs-1 lh-1">Disfruta de la <br>Escalada en Roca</h3>
+            <h3 class="display-4 lh-1">Disfruta de <br>la Escalada</h3>
             <h2 class="fs-3 lh-1 mb-5 mb-md-4">Escalada Deportiva<br>y Multi Largos</h2>
-            <a class="fs-6 link-slide" href="escalada/escalada-deportiva">VEER INTINERARIOS ESCALADA</a>
+            <a class="fs-6 link-offset-2 link-slide" href="escalada/escalada-deportiva">VEER INTINERARIOS</a>
           </div>
         </div>
       </div>
@@ -71,6 +71,10 @@
 
 <style>
 
+.carousel {
+  height: 100%;
+  scroll-snap-align: start;
+}
 .carousel-caption {
   position: static;
   padding-top: 103px;
@@ -86,10 +90,6 @@
 }
 .link-slide {
 	color: #ffffff;
-  text-decoration: none;
-}
-.link-slide :hover{
-  text-decoration: underline;
 }
 #shape-shade-slider {
 	width: 580px;
@@ -102,15 +102,10 @@
 /* ////////Small devices///////// */
 
 @media (max-width: 575.98px) {
-
-  .fs-1 {
-    font-size: 40px!important;
-  }               
+              
   #shape-shade-slider{
 		width: 100%;
-		width: -moz-fit-content;
 		padding: 30px 30px 60px 15px;
-		clip-path: unset;
 	}
 }
   
