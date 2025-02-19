@@ -11,13 +11,13 @@ const { title } = Astro.props;
 
 const makeTitle = title
   ? title + ' | ' + 'Patagonia Ascent'
-  : 'Patagonia Ascent, Esquí y Escalada en Chalten, Patagonia';
+  : 'Esquí y Escalada en Patagonia';
 
 // const makeDescription = description
 // ? description : "Best experience in Patagonia: Mountaineering, Climbing, Skiing, Courses and more.";
 
 const metaData = {
-  keywords: 'patagonia, chalten, fitz roy, cerro torre, escalada roca, esqui',
+  keywords: 'patagonia, chalten, fitz roy, cerro torre, escalada, esqui',
   description:
     'La mejor experiencia en Patagonia: Montañismo, Escalada, Esquí, Cursos y más.',
   imageType: 'img/jpg',
@@ -33,7 +33,7 @@ const socialImageURL = new URL('/img/patagoniascent.jpg', Astro.url);
 ---
 
 <!doctype html>
-<html lang='en'>
+<html lang='es'>
   <head>
     <meta charset='UTF-8' />
     <meta name='viewport' content='width=device-width' />
