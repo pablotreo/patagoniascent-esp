@@ -46,35 +46,12 @@ const socialImageURL = new URL('/img/patagoniascent.jpg', Astro.url);
   <head>
     <meta charset='UTF-8' />
     <meta name='viewport' content='width=device-width, initial-scale=1' />
-
+    <link rel='icon' type='image/svg+xml' href='/img/favicon.png' />
     <meta name='generator' content={Astro.generator} />
     <meta name='keywords' content={metaData.keywords} />
-    <meta name='description' content={makeDescription} />
-
-    <link rel='icon' type='image/svg+xml' href='/img/favicon.png' />
-    <!-- <meta name='generator' content={Astro.generator} /> -->
-    <!-- <meta name='description' content={makeDescription} /> -->
-
-    <ViewTransitions />
-
     <title>{makeTitle}</title>
-
-    <meta property='og:url' content={canonicalURL} />
-    <meta property='og:type' content={metaData.type} />
-    <meta property='og:site_name' content={metaData.siteName} />
-    <meta property='og:description' content={makeDescription} />
-    <meta property='og:title' content={makeTitle} />
-    <meta property='og:image' content={socialImageURL} />
-    <meta property='og:image:type' content={metaData.imageType} />
-    <meta property='og:image:alt' content={makeTitle} />
-    <meta property='og:image:width' content={metaData.imageWidth} />
-    <meta property='og:image:height' content={metaData.imageHeight} />
-
-    <meta name='twitter:card' content={metaData.twitterCard} />
-    <meta name='twitter:title' content={makeTitle} />
-    <meta name='twitter:description' content={makeDescription} />
-    <meta name='twitter:image' content={socialImageURL} />
-    <meta name='twitter:image:alt' content={makeTitle} />
+    <ViewTransitions />
+    <meta name='description' content={makeDescription} />
 
     <link
       rel='stylesheet'
@@ -92,11 +69,11 @@ const socialImageURL = new URL('/img/patagoniascent.jpg', Astro.url);
 
     <SEO
       title='Patagonia Ascent'
-      description='Best experience in Patagonia: Mountaineering, Climbing, Skiing, Courses and more.'
+      description='La mejor experiencia en Patagonia: Montañismo, Escalada, Esquí, Cursos y más.'
       openGraph={{
         basic: {
           title:
-            'Best experience in Patagonia: Mountaineering, Climbing, Skiing, Courses and more.',
+            'La mejor experiencia en Patagonia: Montañismo, Escalada, Esquí, Cursos y más.',
           type: 'A type.',
           image: 'https://www.patagoniascent.com/img/patagoniascent.jpg',
         },
