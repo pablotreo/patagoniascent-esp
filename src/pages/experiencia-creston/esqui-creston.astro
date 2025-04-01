@@ -1,0 +1,72 @@
+---
+import LayoutPaginas from '../../layouts/LayoutPaginas.astro';
+import Content from '../../components/paginas/Content.astro';
+import Titulo from '../../components/paginas/Titulo.astro';
+import Slider from '../../components/paginas/Slider.astro';
+
+const fotos = [
+  {
+    alt: 'Full Day Esquí de Travesía',
+    srcFotos: '/img/paginas/slider/creston/esqui-creston/esqui-creston6.jpg',
+    srcThum: '/img/paginas/slider/creston/esqui-creston/esqui-creston-thumb6.jpg',
+  },
+  {
+    alt: 'Full Day Esquí de Travesía',
+    srcFotos: '/img/paginas/slider/creston/esqui-creston/esqui-creston2.jpg',
+    srcThum: '/img/paginas/slider/creston/esqui-creston/esqui-creston-thumb2.jpg',
+  },
+  {
+    alt: 'Full Day Esquí de Travesía',
+    srcFotos: '/img/paginas/slider/creston/esqui-creston/esqui-creston7.jpg',
+    srcThum: '/img/paginas/slider/creston/esqui-creston/esqui-creston-thumb7.jpg',
+  },
+  {
+    alt: 'Full Day Esquí de Travesía',
+    srcFotos: '/img/paginas/slider/creston/esqui-creston/esqui-creston4.jpg',
+    srcThum: '/img/paginas/slider/creston/esqui-creston/esqui-creston-thumb4.jpg',
+  },
+  {
+    alt: 'Full Day Esquí de Travesía',
+    srcFotos: '/img/paginas/slider/creston/esqui-creston/esqui-creston5.jpg',
+    srcThum: '/img/paginas/slider/creston/esqui-creston/esqui-creston-thumb5.jpg',
+  },
+];
+---
+
+<LayoutPaginas
+  title='Experiencia Crestón | Full Day Esquí de Travesía'
+  description=''
+>
+  <div class='container text-start px-3 px-lg-5'>
+    <Titulo title=' Esquí de Montaña en el Valle del Cerro Crestón' />
+
+    <div class='container text-center px-lg-5'>
+      <div class='row'>
+        <Content
+          title=' El destino ideal para quienes buscan experiencias auténticas y poco concurridas.'
+          description={`El <strong>Cerro Crestón</strong> es uno de los destinos preferidos para quienes buscan <strong>esquiar en la Patagonia argentina</strong>. Ubicado en El Chaltén, ofrece un terreno variado con pendientes que van desde los <strong>20° hasta los 50°</strong>, adaptándose tanto a principiantes como a esquiadores experimentados que buscan mayores desafíos.<br>
+          En la cara sur del Cerro Crestón, se extiende un glaciar que agrega un componente técnico y mágico al recorrido, con la posibilidad de esquiar cerca de grietas y seracs.<br>
+          El Cerro Crestón es el lugar favorito de los locales por la calidad de sus bajadas, su entorno natural y la tranquilidad que lo caracteriza. Gracias a su ubicación remota, lejos de las multitudes, muchas veces es posible deslizarse por nieve virgen sin huellas, disfrutando de descensos en terreno intacto y sin pisar.<br>
+          Las vistas panorámicas del <strong>valle del río de las Vueltas</strong> y la <strong>cara norte del cerro Fitz Roy</strong> completan esta experiencia de <strong>esquí fuera de pista en la Patagonia.</strong><br>
+          Reservá tu aventura ahora y disfrutá de este imponente valle con ojos de local. Si tenés días extras, recomendamos consultar las opciones de dos o tres días para disfrutar aún más de la experiencia.`}
+          
+          difficulty=' Media / Alta'
+          duration=' 1 día (consultar programas de más días)'
+          pax=' 1 a 4 personas'
+          time=' Junio a Octubre'
+          hrefitinerary='/itinerarios/creston/ProgramaFullDEsquiValleCreston.pdf'
+
+          link1=' Experiencia Crestón'
+          href1='/#experiencia-creston'
+          link2=' Full Day Esquí de Travesía'
+          href2='/experiencia-creston/esqui-creston'
+        />
+
+        <Slider miArray={fotos} />
+
+      </div>
+    </div>
+  </div>
+</LayoutPaginas>
+
+<style></style>
